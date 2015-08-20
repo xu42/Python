@@ -11,7 +11,7 @@ def setRequestData():
 
 def getHtmlCode(request_data):
 	url = 'http://www.chsi.com.cn/cet/query?' + urllib.urlencode(request_data)
-	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36', 'Host': 'www.chsi.com.cn', 'Referer': 'http://www.chsi.com.cn/cet/'}
+	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40 Safari/537.36', 'Host': 'www.chsi.com.cn', 'Referer': 'http://www.chsi.com.cn/cet/', 'Upgrade-Insecure-Requests': '1', 'X-FirePHP-Version': '0.0.6', 'Connection': 'keep-alive'}
 	req = urllib2.Request(url, None, headers)
 	response = urllib2.urlopen(req)
 	return response.read()
