@@ -29,9 +29,12 @@ def parseHtmlCode(html_code):
 	return score_list
 
 def output(score_list):
-	for x in xrange(0, 17, 2):
-		if x%2 == 0:
-			print "\t" + score_list[x] + "\t\t" + score_list[x+1] + "\n"
+        try:
+                for x in xrange(0, 17, 2):
+                        if x%2 == 0:
+                                print "\t" + score_list[x] + "\t\t" + score_list[x+1] + "\n"
+        except IndexError, e:
+                print "Sorry, 获取失败"
 
 def go():
 	request_data = setRequestData()

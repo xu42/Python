@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name = 'cet',
-    version = '0.1',
+    version = '0.1.1',
     keywords = ('cet', 'CET', 'grades'),
     description = 'Access to College English Test Band 4 and Band 6 Grades',
     license = 'MIT License',
