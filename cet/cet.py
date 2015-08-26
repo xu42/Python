@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import urllib
 import urllib2
@@ -29,17 +30,17 @@ def parseHtmlCode(html_code):
 	return score_list
 
 def output(score_list):
-        try:
-                for x in xrange(0, 17, 2):
-                        if x%2 == 0:
-                                print "\t" + score_list[x] + "\t\t" + score_list[x+1] + "\n"
-        except IndexError, e:
-                print "Sorry, 获取失败"
+		try:
+			for x in xrange(0, 17, 2):
+				if x%2 == 0: print "\t" + score_list[x] + "\t\t" + score_list[x+1] + "\n"
+		except IndexError, e:
+			print "Sorry, 获取失败"
 
-def go():
+def get():
 	request_data = setRequestData()
 	html_code = getHtmlCode(request_data)
 	score_list = parseHtmlCode(html_code)
 	output(score_list)
 
-go()
+if __name__ == '__main__':
+	get()
