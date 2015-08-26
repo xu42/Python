@@ -32,3 +32,6 @@ def __set_user_agent_list():
 def get():
     __set_user_agent_list()
     return sample(__user_agent, 1)[0]
+
+if __name__ == '__main__':
+    print get()
