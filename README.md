@@ -5,11 +5,12 @@
 ## CET
 ### 实现功能
 获取大学英语四六级成绩。数据来源 [学信网][1]
+Windows CMD下因编码问题造成程序出错退出运行，Windows下可在cygwim下运行
 ###如何使用
 ```  shell
 $ python cet.py
-请输入您的姓名：张三
-请输入准考证号：123456789101112
+Please input your Name:张三
+Please input your Admission Ticket:123456789101112
 # 信息将会在这里显示
 ```
 
