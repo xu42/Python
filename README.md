@@ -40,6 +40,11 @@ Please input your Admission Ticket:123456789101112
   4. 若`__kuaidaili_pages = 2`且`proxy_list.get('all')`，则返回`2 x 4 x 15 = 120`条记录
   5. 源站可能间歇性无法访问或程序本身存在BUG，返回的记录数量也可能跟理论值有偏差，甚至返回空
 
+## myWirelessRouter
+### 实现功能
+监测某台无线设备是否接入路由器, 同时猜解当前任务
+### 如何使用
+修改`myWirelessRouter.py`中的配置参数，可以按照自己的需求更改，然后执行即可`./myWirelessRouter.py`
 
 
 [1]:  http://www.chsi.com.cn/cet/
